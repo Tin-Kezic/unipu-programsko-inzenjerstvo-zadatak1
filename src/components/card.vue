@@ -2,7 +2,7 @@
   import { computed } from 'vue'
   import { useDark, useToggle } from "@vueuse/core";
   const isDark = useDark();
-  const darkModeButtonColor= computed(() => {
+  const darkModeButtonColor = computed(() => {
     return {
       'bg-black hover:bg-gray-500': isDark.value,
       'bg-white hover:bg-gray-200': !isDark.value,
